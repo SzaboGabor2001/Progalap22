@@ -3,9 +3,10 @@
 
 int main(int argc, char const *argv[])
 {
-    printf("xd\n");
+    float a = 10, b = 4, c = 0;
 
-    float a = 10, b = 4, c = 0;    
+    printf("gib number: %f");
+    scanf(" %f", &a);
 
     c = a / b;
     printf("calc: %f / %f = %.2f\n", a, b, c);
