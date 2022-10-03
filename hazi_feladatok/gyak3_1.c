@@ -5,7 +5,7 @@ int main(int argc, char const *argv[])
 {
     double a = 0, b = 0;
 
-    printf("Enter two numbers: ");
+    printf("Enter two numbers ('a,b'): ");
     scanf("%lf,%lf", &a, &b);
 
     if (b < a) {
