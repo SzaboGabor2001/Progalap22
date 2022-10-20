@@ -21,7 +21,7 @@ int main(int argc, char const *argv[])
         array[i] = round(value * 100) / 100;
     }
 
-    printf("Relative values after '%lf': ", array[0]);
+    printf("Relative values after '%.2lf': ", array[0]);
 
     for (int i = 1; i < size; i++) {
         printf("%.1lf ", array[i] - array[0]);
@@ -33,9 +33,8 @@ int main(int argc, char const *argv[])
         printf("Values aren't monotone.");
         return 0;
     } else {
-        for (int i = 2; i < size; i++)
-        {
-            if (array[i] < array[i - 1]){
+        for (int i = 2; i < size; i++) {
+            if (array[i] < array[i - 1]) {
                 printf("Values aren't monotone.");
                 return 0;  
             }
