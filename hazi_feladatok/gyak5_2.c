@@ -21,8 +21,7 @@ int main(int argc, char const *argv[])
     printf("Inputted grades:");
     for (int i = 0; i < 6; i++) {
         printf(" %f", gs[0]);
-    }
-    
+    }    
     
 
 
