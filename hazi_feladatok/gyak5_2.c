@@ -26,7 +26,7 @@ int main(int argc, char const *argv[])
 
     int grant = -1;
 
-    if (avg < 3.5) {
+    if (avg >= 1 && avg < 3.5) {
         grant = 0;
     } else if (avg >= 3.5 && avg < 4.0) {
         grant = 5000;
